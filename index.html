@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learn js</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    .form {
+      background-color: #f1f1f1;
+      margin: 40px auto;
+      display: flex;
+      padding: 20px;
+      border-radius: 5px;
+      width: 60%;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    input[type="text"] {
+      width: 75%;
+      padding: 15px;
+      border-radius: 5px;
+      border: none;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      color: white;
+      background-color: orangered;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 10px;
+    }
+    .tasks {
+      background-color: #f1f1f1;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: 1 , 1fr;
+      gap: 10px;
+      width: 60%;
+    }
+    .tasks div {
+      background-color: white;
+      padding: 10px;
+      font-size: 17px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .tasks div button {
+      border: none;
+      color: white;
+      background-color: red;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+  <div class="form">
+    <input type="text" id="text">
+    <input type="submit" id="add" value="Add Task">
+  </div>
+  <div class="tasks"></div>
+  <script src="main.js"></script>
+</body>
+</html>
